@@ -1,17 +1,17 @@
 # Lifeline — Designs + Social Media Posts
 
-**Outcome:** Deliver designs and social media posts for Lifeline
+**Outcome:** Deliver pamphlet designs and social media posts for Lifeline
 **Status:** active
 **Category:** Client
 **Owner:** Quincy
-**Deadline:** unknown
+**Deadline:** 2026-06-18 10:00 AM HST — pamphlet designs
 **Client:** Lifeline
 **Related:** clients/lifeline.md (create when ready)
 
 ---
 
 ## Next action
-> Clarify deliverables — how many designs, what format, how many posts, which platforms, deadline
+> Confirm with Jeremy — pamphlet designs due today 10:00 AM HST
 
 ---
 
