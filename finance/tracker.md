@@ -1,5 +1,14 @@
 # Finance Tracker
 
+## Entity ownership structure
+
+| Entity | Quincy % | Notes |
+|---|---|---|
+| 321 Go | 46% | |
+| Titan Medical | 44% | |
+| ZJ Larson | 10% | |
+| Titan Transportation LLC | unknown % | Joseph Luna is co-manager |
+
 ---
 
 ## Receivables (money coming in)
