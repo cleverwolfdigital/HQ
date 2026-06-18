@@ -1,7 +1,7 @@
 # ChaneyBrooks Commercial — Homepage Redesign
 
 **Outcome:** Elementor homepage redesign delivered and live
-**Status:** unknown — confirm with Quincy
+**Status:** active
 **Category:** Client
 **Owner:** Quincy
 **Deadline:** unknown
@@ -11,7 +11,7 @@
 ---
 
 ## Next action
-> Confirm status — active, paused, or delivered?
+> Define scope of redesign — what's changing, what's the timeline, who's doing design?
 
 ## Log
 | Date | Update |

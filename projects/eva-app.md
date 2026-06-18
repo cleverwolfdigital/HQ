@@ -1,7 +1,7 @@
 # EVA App
 
 **Outcome:** Confirmed deployed and stable, or next phase defined
-**Status:** unknown — confirm with Quincy
+**Status:** paused (back burner)
 **Category:** Project
 **Owner:** Quincy
 **Deadline:** unknown
@@ -11,7 +11,7 @@
 ---
 
 ## Next action
-> Confirm status — active development, maintenance mode, or done?
+> None until back-burner lifted — revisit when bandwidth allows
 
 ## State
 - Deployed on Vercel + Railway

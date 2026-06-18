@@ -1,7 +1,7 @@
 # Team Wong Hawaiʻi — Real Estate Site
 
 **Outcome:** Site live with CSS/footer complete and Showcase IDX integrated
-**Status:** unknown — confirm with Quincy
+**Status:** done
 **Category:** Client
 **Owner:** Quincy
 **Deadline:** unknown
@@ -11,11 +11,7 @@
 ---
 
 ## Next action
-> Confirm status — active, paused, or delivered?
-
-## Open questions
-- [ ] CSS/footer work — done or in progress?
-- [ ] Showcase IDX — integrated or pending?
+> None — project complete
 
 ## Log
 | Date | Update |

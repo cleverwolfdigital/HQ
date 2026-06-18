@@ -1,7 +1,7 @@
 # Level Up Smarter — Site + Funnel
 
 **Outcome:** Marketing restarted and cohort/booster funnel generating leads
-**Status:** unknown — confirm with Quincy (site built, marketing stalled)
+**Status:** active (secondary focus — behind CleverWolf.ai launch and ChaneyBrooks)
 **Category:** Project
 **Owner:** Quincy
 **Deadline:** unknown
@@ -11,7 +11,7 @@
 ---
 
 ## Next action
-> Confirm status — is this a client project or internal? Is marketing actively stalled or abandoned?
+> Restart marketing — define one action to get the funnel moving again
 
 ## State
 - Site built
