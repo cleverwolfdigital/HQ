@@ -16,9 +16,8 @@
 ---
 
 ## Open questions
-- [ ] BRAND_DESIGN.md lists Clash Display / Satoshi / JetBrains Mono + ink/paper/teal/brass palette
-- [ ] Homepage built with Schibsted Grotesk / Hanken Grotesk + navy/gold palette
-- [ ] Which is the current direction? Need answer before deploying publicly.
+- [ ] Update or delete BRAND_DESIGN.md in SingleBrain — it's outdated (Clash Display / teal / brass)
+- [ ] Deploy cleverwolf-ai-website/index.html publicly once launch is ready
 
 ## Log
 | Date | Update |

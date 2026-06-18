@@ -11,13 +11,12 @@
 ## Decided
 Luxury / clean / approachable. Japanese iconography influence. Red accents.
 
-## Conflict to resolve
-Two competing implementations exist:
+## Decision: CleverWolf.ai build is current (2026-06-18)
 
-| | BRAND_DESIGN.md (OpenClaw) | cleverwolf-ai-website (Claude Code) |
-|---|---|---|
-| Fonts | Clash Display, Satoshi, JetBrains Mono | Schibsted Grotesk, Hanken Grotesk, Newsreader |
-| Palette | ink, paper, teal, brass | navy (#0A1726), gold (#C8A24E), blue (#2E6FB8) |
-| Status | committed to repo | built locally, not deployed |
+| | Direction |
+|---|---|
+| Fonts | Schibsted Grotesk (display), Hanken Grotesk (body), Newsreader (editorial italic) |
+| Palette | Navy #0A1726, Signal Gold #C8A24E, Blue #2E6FB8 |
+| Source | C:\Users\tidas\cleverwolf-ai-website\index.html |
 
-**Decision needed:** Which direction is current? One must be deprecated before the site goes public.
+BRAND_DESIGN.md in SingleBrain (Clash Display / teal / brass) is outdated — needs to be updated or deleted.
