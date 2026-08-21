@@ -59,10 +59,12 @@ contradictions are the most valuable output of this whole exercise.
 
 - Dashboard: https://brain.cleverwolfdigital.com (I am usually logged in)
 - SSH alias `hostinger`
-- Live DB: /root/singlebrain-app/data/singlebrain.db
-  NOT /root/singlebrain/singlebrain-app/ — that is the repo copy, not live.
+- Live DB: run `sb-db` on the server. Do not hardcode a path — sb-db derives it
+  from systemd and confirms it against the running process's open files, so it
+  cannot go stale. `sb-db -v` shows its working; `sb-db -q` opens a sqlite shell.
 - Back the DB up before the first write:
-  sqlite3 $DB ".backup /root/backups/singlebrain/$(date +%Y-%m-%d-%H%M)/singlebrain.db"
+  DB=$(sb-db)
+  sqlite3 "$DB" ".backup /root/backups/singlebrain/$(date +%Y-%m-%d-%H%M)/singlebrain.db"
 
 Write SQLite directly using the same columns as POST /api/projects — that
 endpoint needs an admin session cookie, so direct SQL is the practical route
@@ -82,6 +84,19 @@ text, so inventing a status silently degrades the page.
   badge  : warning | parked | ''      (empty means no flag)
   due    : a short date like 'Sep 15', or '—'
   kind   : project | campaign
+
+resume_prompt is the other column that matters. It holds a prompt that resumes
+work on that project, and the dashboard puts a Resume button on any card that
+has one — click it and you get the prompt in a dialog with a copy button. Write
+one for every project you add. Status tells me where something stands; the
+resume prompt is what stops the baton being dropped.
+
+A good resume prompt states where the project stands with dates and real IDs,
+where the code and the server are, what has been verified and how to re-verify
+it, what is genuinely open, and the traps that already cost time. Assume the
+reader has no memory of the project at all — that is the situation it exists
+for. Two thousand characters is a reasonable size; a one-liner is not worth
+storing.
 
 Set badge='warning' when there is a genuine open risk or blocker, and put the
 actual blocker in next_action — specific and actionable, not "continue work".
@@ -124,7 +139,8 @@ some are dormant, some may not deserve a row. Deciding which is part of the job.
    shows only the first six projects (.slice(0, 6)), so scraping it right after
    a write makes a perfectly good row look like it failed to save. Click through
    to Projects and confirm the cards.
-7. Report: what you added, what you skipped, what contradicted my notes, and
+7. Write a resume_prompt for every project you add, to the standard above.
+8. Report: what you added, what you skipped, what contradicted my notes, and
    anything you could not verify.
 ```
 
@@ -136,6 +152,8 @@ some are dormant, some may not deserve a row. Deciding which is part of the job.
   flag everything — if half the cards are amber, none of them mean anything.
 - `next_action` is what makes the page worth opening. "Ongoing operations" is
   filler; "Verify WP Swings renewals fire before the $49/mo plan opens" is not.
+- A stale resume prompt is worse than none, because it will be trusted. Refresh
+  it in the same session that changes the project.
 - Re-running the prompt later is safe by design — the upsert refreshes each row
   rather than duplicating it.
 - Per-session status updates are already a standing practice, so this backfill
